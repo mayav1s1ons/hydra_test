@@ -1,0 +1,23 @@
+<h1>hydra inside a webpage</h1>
+<canvas id="myCanvas" style="width:400px; height:400px;"></canvas>
+
+<!-- import the latest version of hydra synth-->
+<script src="https://unpkg.com/hydra-synth"></script>
+<script>
+  // create a new hydra-synth instance
+  new window.Hydra({
+    canvas: document.getElementById("myCanvas"),
+    detectAudio: false
+  })
+  // run some hydra code!
+  //osc(10, 0.1, 0.8).rotate(0, 0.1).kaleid().color(-1, 1).out()
+  noise(4.355, .001)
+	.color(12.811, 9.637, 26.617)
+	.colorama(0.747)
+	.modulateHue(src(o0)
+	.scale(1.233), 0.003)
+	.modulateRepeat(noise(7), .5, .5, .15, .15)
+
+	.out();
+
+</script>
